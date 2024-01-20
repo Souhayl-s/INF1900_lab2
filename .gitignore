@@ -1,0 +1,9 @@
+*.d
+*.o
+*.elf
+*.elf.map
+*.hex
+*.hpp
+fonctions.cpp
+tp2_backup.cpp
+*.json
