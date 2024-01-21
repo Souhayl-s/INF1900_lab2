@@ -90,7 +90,7 @@ const int8_t masque_boutton{(1 << PD2)}; // masque pour verifier l'etat de la PI
 // fonction qui verifie si le bouton a ete presse ou relache selon le parametre --> debounce
 bool ButtonPressed()
 {
-    bool is_state_button = PIND & masque_boutton;                   // vrai si le boutton est dans l'etat attendu sinon faux
+    bool is_state_button = PIND & masque_boutton; 
     if (is_state_button)
     {
         _delay_ms(delai_debounce);

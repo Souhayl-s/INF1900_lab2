@@ -3,12 +3,14 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Tools\\AVR\\avr\\include**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "__AVR_ATmega324PA__"
             ],
             "windowsSdkVersion": "10.0.22621.0",
             "cStandard": "c17",
