@@ -114,7 +114,7 @@ bool ButtonPressed_then_Released()
     bool est_appuye = ButtonPressed();
     if (est_appuye)
     {
-        _delay_ms(delai_pression_relache); // BIG DOUBT
+        _delay_ms(delai_pression_relache); 
         bool est_relache = ButtonReleased();
         if (est_relache)
             return true;
