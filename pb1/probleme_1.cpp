@@ -136,7 +136,7 @@ bool ButtonReleased() { return !ButtonPressed(); }
 
 // fonction qui veriife si le bouton a ete PRESSE  puis RELACHE  (delai entre les 2 ?)
 
-const int8_t delai_pression_relache{100} ;
+const int8_t delai_pression_relache{50} ;
 
 bool ButtonPressed_then_Released()
 {
