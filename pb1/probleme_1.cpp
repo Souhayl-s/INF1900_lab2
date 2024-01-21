@@ -58,12 +58,8 @@ int main()
 {
     // Definition de chaque port en mode entree ou sortie
 
-    // DDRA |= (1 << PA3) | (1 << PA2); // PORT de la LED A3 et A2 en sortie
-    // DDRD &= ~(1 << PD2);             // PORT pour le bouton poussoir D2 en entree    
-
-    DDRA = 0xff ; 
-    DDRD = 0x00 ; 
-
+    DDRA |= (1 << PA3) | (1 << PA2); // PORT de la LED A3 et A2 en sortie
+    DDRD &= ~(1 << PD2);             // PORT pour le bouton poussoir D2 en entree    
 
     // etat_actuel =  eteint_0  (etat initial)
     etat_Robot etat_present{etat_Eteint_0};

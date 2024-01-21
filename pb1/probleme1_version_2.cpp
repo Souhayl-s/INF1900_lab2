@@ -40,7 +40,6 @@ const int16_t delai_DEL_Verte{2000}; // en ms
 int main()
 {
     // Definition de chaque port en mode entree ou sortie
-
     DDRA |= (1 << PA3) | (1 << PA2); // PORT de la LED A3 et A2 en sortie
     DDRD &= ~(1 << PD2);             // PORT pour le bouton poussoir D2 en entree    
 
