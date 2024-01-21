@@ -7,9 +7,6 @@
 #include <util/delay.h>
 
 
-
-// PSEUDO - CODE //
-
 // prototypes
 
 /* Bouton poussoir*/
@@ -35,8 +32,8 @@ enum etat_robot
 }; // Presse = le bouton est presse ; Libre = Rien n'appuie sur le bouton
 
 // Constantes du main
-int8_t mask_PORTA{(1 << PA1) | (1 << PA0)};
-int8_t mask_PORTD{~(1 << PD2)};
+uint8_t mask_PORTA{(1 << PA1) | (1 << PA0)};
+uint8_t mask_PORTD{~(1 << PD2)};
 
 // Main function
 
@@ -118,8 +115,8 @@ int main()
 
 /*Etat du bouton*/
 
-const int8_t delai_debounce{10};         // delai en ms
-const int8_t masque_boutton{(1 << PD2)}; // masque pour verifier l'etat de la PIND2
+const uint8_t delai_debounce{10};         // delai en ms
+const uint8_t masque_boutton{(1 << PD2)}; // masque pour verifier l'etat de la PIND2
 
 // fonction qui verifie si le bouton a ete presse ou relache selon le parametre --> debounce
 bool ButtonPressed()
@@ -142,11 +139,11 @@ bool ButtonReleased() { return !ButtonPressed(); }
 
 // On considere qu'on utilise les broches A0 / A1 pour la DEL libre
 
-const int8_t delay_couleur_ambre{10};
+const uint8_t delay_couleur_ambre{10};
 
 void DEL_libre_Eteinte()
 {
-    int8_t mask_eteint{((1 << PA1) | (1 << PA0))};
+    uint8_t mask_eteint{((1 << PA1) | (1 << PA0))};
     PORTA |= mask_eteint;
 }
 
