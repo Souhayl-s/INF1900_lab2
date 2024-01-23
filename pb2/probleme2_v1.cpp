@@ -29,11 +29,12 @@ enum etat_robot
     etat_Rouge_Presse,
     etat_Eteint_Libre,
     etat_Vert_Presse
-}; // Presse = le bouton est presse ; Libre = Rien n'appuie sur le bouton
+}; 
+// Presse = le bouton est presse ; Libre = Rien n'appuie sur le bouton
 
 // Constantes du main
-uint8_t mask_PORTA{(1 << PA1) | (1 << PA0)};
-uint8_t mask_PORTD{~(1 << PD2)};
+const uint8_t mask_PORTA{(1 << PA1) | (1 << PA0)};
+const uint8_t mask_PORTD{~(1 << PD2)};
 
 // Main function
 

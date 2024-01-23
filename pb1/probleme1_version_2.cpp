@@ -109,7 +109,7 @@ bool ButtonReleased() { return !ButtonPressed(); }
 
 const int8_t delai_pression_relache{50} ;
 
-bool ButtonPressed_then_Released()
+bool Button_Pressed_then_Released()
 {
     bool est_appuye = ButtonPressed();
     if (est_appuye)
